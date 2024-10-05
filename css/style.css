@@ -1,0 +1,416 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: -0.4px;
+}
+
+p {
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  line-height: 0.8;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  display: initial;
+  justify-content: space-between;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header_background_img {
+  height: 100vh;
+  background-image: url(../img/mainvisual.jpg);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header_background_img .header {
+  display: flex;
+  justify-content: right;
+  height: 943px;
+}
+.header_background_img .header .header_logo {
+  margin: 30px;
+  width: 120px;
+  height: auto;
+}
+.header_background_img .header .header_logo img {
+  width: 100%;
+  height: auto;
+}
+
+.archiveandnew {
+  width: 1035px;
+  height: 723px;
+  margin: 75px auto 0;
+}
+.archiveandnew .archiveandnew_text {
+  text-align: center;
+}
+.archiveandnew .archiveandnew_text .archiveandnew_text_p {
+  padding: 10px;
+}
+.archiveandnew .archiveandnew_text .archiveandnew_text_p p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.archiveandnew .archiveandnew_sbs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 23px;
+}
+.archiveandnew .archiveandnew_sbs .archive_img,
+.archiveandnew .archiveandnew_sbs .new_img {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.archiveandnew .archiveandnew_sbs .archive_img .archive_img_size img,
+.archiveandnew .archiveandnew_sbs .archive_img .new_img_size img,
+.archiveandnew .archiveandnew_sbs .new_img .archive_img_size img,
+.archiveandnew .archiveandnew_sbs .new_img .new_img_size img {
+  margin: 0;
+}
+.archiveandnew .archiveandnew_sbs .archive_img .archive_img_txt,
+.archiveandnew .archiveandnew_sbs .archive_img .new_img_txt,
+.archiveandnew .archiveandnew_sbs .new_img .archive_img_txt,
+.archiveandnew .archiveandnew_sbs .new_img .new_img_txt {
+  position: absolute;
+  top: 50%;
+  /* 画像の中央に配置 */
+  left: 50%;
+  /* 左右中央に配置 */
+  transform: translate(-50%, -50%);
+  /* 中央寄せ調整 */
+  color: white;
+  /* テキストが見やすいように色を指定 */
+  height: 100px;
+  width: 292px;
+  background-color: #333;
+  text-align: center;
+  padding-top: 13px;
+}
+.archiveandnew .archiveandnew_sbs .archive_img .archive_img_txt p,
+.archiveandnew .archiveandnew_sbs .archive_img .new_img_txt p,
+.archiveandnew .archiveandnew_sbs .new_img .archive_img_txt p,
+.archiveandnew .archiveandnew_sbs .new_img .new_img_txt p {
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+.archiveandnew .archiveandnew_sbs .new_img {
+  margin-left: 20px;
+}
+
+.fashionandstyle {
+  height: 598px;
+}
+.fashionandstyle .fashionandstyle_img {
+  height: 520px;
+  background-image: url(../img/fashion.jpg);
+  background-position: center -55px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fashionandstyle .fashionandstyle_img .fashionandstyle_text {
+  margin-top: 55px;
+  text-align: center;
+}
+.fashionandstyle .fashionandstyle_img .fashionandstyle_text .fashionandstyle_text_p {
+  margin-top: 16px;
+}
+.fashionandstyle .fashionandstyle_img .fashionandstyle_text .fashionandstyle_text_p p {
+  line-height: 1.4;
+}
+.fashionandstyle .fashionandstyle_img .fushionadstyle_button {
+  margin-top: 30px;
+  height: 45px;
+  width: 132px;
+}
+.fashionandstyle .fashionandstyle_img .fushionadstyle_button p {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.catalog {
+  height: 593px;
+}
+
+.antique {
+  height: 593px;
+}
+
+.catalog,
+.antique {
+  width: 1030px;
+  margin: 0 auto;
+}
+.catalog .catalog_sbs,
+.antique .catalog_sbs {
+  padding-top: 10px;
+}
+.catalog .antique_sbs,
+.antique .antique_sbs {
+  padding-top: 37px;
+}
+.catalog .catalog_sbs,
+.catalog .antique_sbs,
+.antique .catalog_sbs,
+.antique .antique_sbs {
+  display: flex;
+  justify-content: center;
+}
+.catalog .catalog_sbs .catalog_img,
+.catalog .catalog_sbs .antique_img,
+.catalog .antique_sbs .catalog_img,
+.catalog .antique_sbs .antique_img,
+.antique .catalog_sbs .catalog_img,
+.antique .catalog_sbs .antique_img,
+.antique .antique_sbs .catalog_img,
+.antique .antique_sbs .antique_img {
+  width: 50%;
+}
+.catalog .catalog_sbs .catalog_img img,
+.catalog .catalog_sbs .antique_img img,
+.catalog .antique_sbs .catalog_img img,
+.catalog .antique_sbs .antique_img img,
+.antique .catalog_sbs .catalog_img img,
+.antique .catalog_sbs .antique_img img,
+.antique .antique_sbs .catalog_img img,
+.antique .antique_sbs .antique_img img {
+  margin-top: 0;
+  width: 100%;
+}
+.catalog .catalog_sbs .catalog_text,
+.catalog .catalog_sbs .antique_text,
+.catalog .antique_sbs .catalog_text,
+.catalog .antique_sbs .antique_text,
+.antique .catalog_sbs .catalog_text,
+.antique .catalog_sbs .antique_text,
+.antique .antique_sbs .catalog_text,
+.antique .antique_sbs .antique_text {
+  width: 50%;
+}
+.catalog .catalog_sbs .catalog_text .catalog_h2,
+.catalog .catalog_sbs .catalog_text .antique_h2,
+.catalog .catalog_sbs .antique_text .catalog_h2,
+.catalog .catalog_sbs .antique_text .antique_h2,
+.catalog .antique_sbs .catalog_text .catalog_h2,
+.catalog .antique_sbs .catalog_text .antique_h2,
+.catalog .antique_sbs .antique_text .catalog_h2,
+.catalog .antique_sbs .antique_text .antique_h2,
+.antique .catalog_sbs .catalog_text .catalog_h2,
+.antique .catalog_sbs .catalog_text .antique_h2,
+.antique .catalog_sbs .antique_text .catalog_h2,
+.antique .catalog_sbs .antique_text .antique_h2,
+.antique .antique_sbs .catalog_text .catalog_h2,
+.antique .antique_sbs .catalog_text .antique_h2,
+.antique .antique_sbs .antique_text .catalog_h2,
+.antique .antique_sbs .antique_text .antique_h2 {
+  margin-top: 0;
+  text-align: center;
+}
+.catalog .catalog_sbs .catalog_text .catalog_h2,
+.catalog .catalog_sbs .antique_text .catalog_h2,
+.catalog .antique_sbs .catalog_text .catalog_h2,
+.catalog .antique_sbs .antique_text .catalog_h2,
+.antique .catalog_sbs .catalog_text .catalog_h2,
+.antique .catalog_sbs .antique_text .catalog_h2,
+.antique .antique_sbs .catalog_text .catalog_h2,
+.antique .antique_sbs .antique_text .catalog_h2 {
+  padding-top: 53px;
+}
+.catalog .catalog_sbs .catalog_text .antique_h2,
+.catalog .catalog_sbs .antique_text .antique_h2,
+.catalog .antique_sbs .catalog_text .antique_h2,
+.catalog .antique_sbs .antique_text .antique_h2,
+.antique .catalog_sbs .catalog_text .antique_h2,
+.antique .catalog_sbs .antique_text .antique_h2,
+.antique .antique_sbs .catalog_text .antique_h2,
+.antique .antique_sbs .antique_text .antique_h2 {
+  padding-top: 53px;
+}
+.catalog .catalog_sbs .catalog_text .catalog_p_s,
+.catalog .catalog_sbs .catalog_text .antique_p_s,
+.catalog .catalog_sbs .antique_text .catalog_p_s,
+.catalog .catalog_sbs .antique_text .antique_p_s,
+.catalog .antique_sbs .catalog_text .catalog_p_s,
+.catalog .antique_sbs .catalog_text .antique_p_s,
+.catalog .antique_sbs .antique_text .catalog_p_s,
+.catalog .antique_sbs .antique_text .antique_p_s,
+.antique .catalog_sbs .catalog_text .catalog_p_s,
+.antique .catalog_sbs .catalog_text .antique_p_s,
+.antique .catalog_sbs .antique_text .catalog_p_s,
+.antique .catalog_sbs .antique_text .antique_p_s,
+.antique .antique_sbs .catalog_text .catalog_p_s,
+.antique .antique_sbs .catalog_text .antique_p_s,
+.antique .antique_sbs .antique_text .catalog_p_s,
+.antique .antique_sbs .antique_text .antique_p_s {
+  margin-top: 36px;
+}
+.catalog .catalog_sbs .catalog_text .catalog_p_s p,
+.catalog .catalog_sbs .catalog_text .antique_p_s p,
+.catalog .catalog_sbs .antique_text .catalog_p_s p,
+.catalog .catalog_sbs .antique_text .antique_p_s p,
+.catalog .antique_sbs .catalog_text .catalog_p_s p,
+.catalog .antique_sbs .catalog_text .antique_p_s p,
+.catalog .antique_sbs .antique_text .catalog_p_s p,
+.catalog .antique_sbs .antique_text .antique_p_s p,
+.antique .catalog_sbs .catalog_text .catalog_p_s p,
+.antique .catalog_sbs .catalog_text .antique_p_s p,
+.antique .catalog_sbs .antique_text .catalog_p_s p,
+.antique .catalog_sbs .antique_text .antique_p_s p,
+.antique .antique_sbs .catalog_text .catalog_p_s p,
+.antique .antique_sbs .catalog_text .antique_p_s p,
+.antique .antique_sbs .antique_text .catalog_p_s p,
+.antique .antique_sbs .antique_text .antique_p_s p {
+  line-height: 1.4;
+  letter-spacing: -0.9px;
+}
+.catalog .catalog_sbs .catalog_text .catalog_p_s .catalog_p,
+.catalog .catalog_sbs .catalog_text .catalog_p_s .antique_p,
+.catalog .catalog_sbs .catalog_text .antique_p_s .catalog_p,
+.catalog .catalog_sbs .catalog_text .antique_p_s .antique_p,
+.catalog .catalog_sbs .antique_text .catalog_p_s .catalog_p,
+.catalog .catalog_sbs .antique_text .catalog_p_s .antique_p,
+.catalog .catalog_sbs .antique_text .antique_p_s .catalog_p,
+.catalog .catalog_sbs .antique_text .antique_p_s .antique_p,
+.catalog .antique_sbs .catalog_text .catalog_p_s .catalog_p,
+.catalog .antique_sbs .catalog_text .catalog_p_s .antique_p,
+.catalog .antique_sbs .catalog_text .antique_p_s .catalog_p,
+.catalog .antique_sbs .catalog_text .antique_p_s .antique_p,
+.catalog .antique_sbs .antique_text .catalog_p_s .catalog_p,
+.catalog .antique_sbs .antique_text .catalog_p_s .antique_p,
+.catalog .antique_sbs .antique_text .antique_p_s .catalog_p,
+.catalog .antique_sbs .antique_text .antique_p_s .antique_p,
+.antique .catalog_sbs .catalog_text .catalog_p_s .catalog_p,
+.antique .catalog_sbs .catalog_text .catalog_p_s .antique_p,
+.antique .catalog_sbs .catalog_text .antique_p_s .catalog_p,
+.antique .catalog_sbs .catalog_text .antique_p_s .antique_p,
+.antique .catalog_sbs .antique_text .catalog_p_s .catalog_p,
+.antique .catalog_sbs .antique_text .catalog_p_s .antique_p,
+.antique .catalog_sbs .antique_text .antique_p_s .catalog_p,
+.antique .catalog_sbs .antique_text .antique_p_s .antique_p,
+.antique .antique_sbs .catalog_text .catalog_p_s .catalog_p,
+.antique .antique_sbs .catalog_text .catalog_p_s .antique_p,
+.antique .antique_sbs .catalog_text .antique_p_s .catalog_p,
+.antique .antique_sbs .catalog_text .antique_p_s .antique_p,
+.antique .antique_sbs .antique_text .catalog_p_s .catalog_p,
+.antique .antique_sbs .antique_text .catalog_p_s .antique_p,
+.antique .antique_sbs .antique_text .antique_p_s .catalog_p,
+.antique .antique_sbs .antique_text .antique_p_s .antique_p {
+  margin-top: 30px;
+}
+.catalog .catalog_sbs .catalog_text,
+.catalog .antique_sbs .catalog_text,
+.antique .catalog_sbs .catalog_text,
+.antique .antique_sbs .catalog_text {
+  margin-left: 40px;
+}
+.catalog .catalog_sbs .antique_text,
+.catalog .antique_sbs .antique_text,
+.antique .catalog_sbs .antique_text,
+.antique .antique_sbs .antique_text {
+  margin-right: 40px;
+  margin-top: 4px;
+}
+.catalog .catalog_sbs .antique_text .antique_button,
+.catalog .antique_sbs .antique_text .antique_button,
+.antique .catalog_sbs .antique_text .antique_button,
+.antique .antique_sbs .antique_text .antique_button {
+  margin: 59px 181px 0;
+  height: 44px;
+  width: 133px;
+}
+.catalog .catalog_sbs .antique_text .antique_button p,
+.catalog .antique_sbs .antique_text .antique_button p,
+.antique .catalog_sbs .antique_text .antique_button p,
+.antique .antique_sbs .antique_text .antique_button p {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.footer_txt_background_color {
+  background-color: #ddd;
+  height: 370px;
+}
+
+.footertextandmenu {
+  width: 1030px;
+  margin: 0 auto;
+  padding: 104px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footertextandmenu .footer_logo_img img {
+  margin: 57px 0 0;
+}
+.footertextandmenu .footer_menu {
+  width: 160px;
+  margin-left: 35px;
+}
+.footertextandmenu .footer_menu .footer_menu_h4 {
+  margin-bottom: 14px;
+}
+.footertextandmenu .footer_menu .footer_menu_ul {
+  padding-top: 10px;
+}
+.footertextandmenu .footer_menu .footer_menu_ul .footer_menu_li {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 2;
+}
+.footertextandmenu .footer_text {
+  width: 335px;
+}
+.footertextandmenu .footer_text .footer_text_h4 {
+  margin-bottom: 14px;
+}
+.footertextandmenu .footer_text p {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 2;
+}
+
+.footer {
+  height: 73px;
+}
+.footer p {
+  text-align: center;
+  padding-top: 35px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}/*# sourceMappingURL=style.css.map */
